@@ -8,7 +8,7 @@ set :job_template, "/bin/sh -l -c ':job'"
 
 job_type :rake, 'cd :path && :bundle_command rake :task --silent :output'
 
-every :day, at: '11pm', roles: :fetcher do
+every :sunday, at: '11pm', roles: :fetcher do
   rake 'fetch:stocks drive:upload'
 end
 
