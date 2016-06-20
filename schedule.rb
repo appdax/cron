@@ -20,7 +20,7 @@ every :day, at: '1am', roles: :scraper do
   rake 'drive:download scrape:stocks drive:upload'
 end
 
-every '*/15 8-22 * * mon-fri', roles: :intra do
+every '*/15 8-22 * * 1-5', roles: :intra do
   rake 'scrape:intra drive:upload'
 end
 
