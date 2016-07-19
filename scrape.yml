@@ -1,0 +1,8 @@
+bb-scraper:
+  :fields:
+    - :macd
+    - :roc
+    - :rsi
+  :concurrent_requests: 25
+  :parallel_requests: 15
+  :request_timeout: 25
